@@ -4,7 +4,8 @@
 #define PRIVATE static
 
 typedef enum EntityType {
-  T_HORSE = 0
+  T_HORSE = 0,
+  T_TREE = 1
 } EntityType;
 
 typedef struct Entity {

@@ -1,7 +1,8 @@
 CC = gcc
 FRAMEWORKS = -framework OpenGL -framework Cocoa -framework IOKit -framework CoreAudio -framework CoreVideo
-CFLAGS = -I/usr/local/include -Wall
-LDFLAGS = -L/usr/local/lib -lraylib $(FRAMEWORKS)
+SRC = /opt/homebrew
+CFLAGS = -I/$(SRC)/include -Wall
+LDFLAGS = -L/$(SRC)/lib -lraylib $(FRAMEWORKS)
 
 start: main
 	./main
